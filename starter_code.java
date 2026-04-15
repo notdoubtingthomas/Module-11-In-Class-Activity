@@ -108,6 +108,8 @@ public class starter_code extends JFrame implements ActionListener {
                 service = "Tutoring";
             } else if (advisingBtn.isSelected()) {
                 service = "Advising";
+            } else if (labBtn.isSelected()) {
+                service = "Lab Support";
             } else {
                 outputArea.setText("Error: Please select a service.");
                 return;
@@ -154,7 +156,7 @@ public class starter_code extends JFrame implements ActionListener {
             // - Selected extras
             // - Total cost
 
-            String result = "Student Name: " + name + "\nService" + service + "\nPlan: " + plan + "\nExtras: " + extras + "\nTotal Costs: " + total;
+            String result = "Student Name: " + name + "\nService: " + service + "\nPlan: " + plan + "\nExtras: " + extras + "\nTotal Costs: " + total;
 
 
             // TODO 10: Display the final result in the output area
